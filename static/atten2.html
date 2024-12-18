@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Yourself</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <h1><span>F</span>RAS</h1>
+        </div>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="burger">
+            <span class="bun bun--top">
+                <span class="bun__crust bun__crust--top"></span>
+            </span>
+            <span class="bun bun--bottom">
+                <span class="bun__crust bun__crust--bottom"></span>
+            </span>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="left-side">
+            <input type="text" id="user-id" placeholder="Enter Your ID">
+            <br><br>
+            <input type="text" id="user-name" placeholder="Enter Your Name">
+            <br><br>
+            <button id="capture">Take Images</button>
+        </div>
+        <div id="webcam-container"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System - Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1><span>F</span>RAS</h1>
+        </div>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="burger">
+            <span class="bun bun--top">
+                <span class="bun__crust bun__crust--top"></span>
+            </span>
+            <span class="bun bun--bottom">
+                <span class="bun__crust bun__crust--bottom"></span>
+            </span>
+        </label>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="#">Register Yourself</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="left-side">
+            <input type="text" id="user-id" placeholder="Enter Your ID">
+            <br><br>
+            <input type="text" id="user-name" placeholder="Enter Your Name">
+            <br><br>
+            <button id="capture">Take Images</button>
+        </div>
+        <div id="webcam-container"></div>
+    </div>
+</body>
+</html>
+
